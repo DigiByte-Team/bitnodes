@@ -149,14 +149,14 @@ from binascii import hexlify, unhexlify
 from cStringIO import StringIO
 from operator import itemgetter
 
-MAGIC_NUMBER = "\xF9\xBE\xB4\xD9"
+MAGIC_NUMBER = "\xFA\xC3\xB6\xDA"
 MIN_PROTOCOL_VERSION = 70001
 PROTOCOL_VERSION = 70002
 SERVICES = 0  # set to 1 for NODE_NETWORK
-USER_AGENT = "/getaddr.bitnodes.io:0.1/"
-HEIGHT = 347706
-RELAY = 0  # set to 1 to receive all txs
-DEFAULT_PORT = 8333
+USER_AGENT = "/getaddr.diginodes.io:0.1/"
+HEIGHT = 140000
+RELAY = 1  # set to 1 to receive all txs
+DEFAULT_PORT = 12024
 
 SOCKET_BUFSIZE = 8192
 SOCKET_TIMEOUT = 15
@@ -918,7 +918,7 @@ class Connection(object):
 
 
 def main():
-    to_addr = ("148.251.238.178", 8333)
+    to_addr = ("188.165.223.132", 12024)
 
     handshake_msgs = []
     addr_msgs = []
